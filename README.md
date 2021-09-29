@@ -35,3 +35,6 @@ This package implemented several typical quantum characterization verification a
 An automatication script is developed to streamline the single qubit gate and two qubits gate parameter optimization and randomized benchmarking.
 
 1. https://arxiv.org/abs/2101.00071
+
+
+[Refer to the WIKI page for more instruction](https://gitlab.com/LBL-QubiC/experiments/tutorial/-/wikis/home)
