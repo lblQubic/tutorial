@@ -1,10 +1,9 @@
 from matplotlib import pyplot
 import sys
-sys.path.append('../paraqasmqubic/submodules/qubic/src/')
 from qubic.qcvv.rabioptimize import c_rabioptimize
+qubitid=sys.argv[1]
 calirepo='submodules/qchip'
-
-rabioptimize=c_rabioptimize(qubitid=sys.argv[1],calirepo=calirepo,debug=3,gmixs=None,plot=True)
+rabioptimize=c_rabioptimize(qubitid=qubitid,calirepo=calirepo,debug=3,gmixs=None,plot=False)
 print(rabioptimize.optimize(nsample=50,disp=3))
 pyplot.ioff()
 pyplot.show()

@@ -26,7 +26,6 @@ measure q[1] -> meas[1];
 '''
 
 import sys
-sys.path.append('../paraqasmqubic/submodules/qubic/src/')
 qasms=[qasm0,qasm1,qasm2]
 from qubic.qasmqubic.qasmrun import qasmrun
 qasmresult=qasmrun(nsample=200,qasms=qasms,qubitsmap={'q':['Q1','Q3']},heraldingqasm=[qasm0])
